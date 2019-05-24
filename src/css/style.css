@@ -4,9 +4,26 @@ body {
   color: #333333;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
   width: 1170px;
   margin: auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 760px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 580px;
+    width: 95%;
+  }
 }
 
 .button {
@@ -16,8 +33,6 @@ body {
   padding: 17px 30px 17px 30px;
   font-size: 13px;
   font-weight: 400;
-  width: 170px;
-  height: 49px;
 }
 
 /*Подключение стилей шапки сайта*/
@@ -56,6 +71,19 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: right;
+}
+
+@media (max-width: 768px) {
+  .navbar .navbar__contacts {
+    display: none;
+  }
+  .navbar .navbar__logo {
+    width: 90px;
+  }
+  .navbar .navbar__button {
+    font-size: 10px;
+    padding: 15px 26px;
+  }
 }
 
 .navbar__address {
