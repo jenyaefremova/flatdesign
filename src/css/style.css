@@ -13,9 +13,11 @@ body {
   border-radius: 10px;
   background-color: #ffd200;
   border: none;
-  padding: 18px 30px;
+  padding: 17px 30px 17px 30px;
   font-size: 13px;
   font-weight: 400;
+  width: 170px;
+  height: 49px;
 }
 
 /*Подключение стилей шапки сайта*/
@@ -42,6 +44,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: -2px;
 }
 
 .navbar__contacts {
@@ -55,15 +58,19 @@ body {
   text-align: right;
 }
 
+.navbar__address {
+  font-size: 13px;
+}
+
 .navbar__phone {
   text-decoration: none;
   font-size: 20px;
-  font-weight: 400;
-  margin-top: 10px;
+  font-weight: 600;
+  margin-top: 8px;
   color: #333333;
 }
 
 .navbar__button {
-  margin-left: 30px;
+  margin-left: 28px;
 }
 /*# sourceMappingURL=style.css.map */
