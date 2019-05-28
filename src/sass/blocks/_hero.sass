@@ -1,21 +1,22 @@
 .hero
-  padding: 50px 0
+  padding: 50px
   background-color: $bcg-color
   &-block
     display: flex
   &-text
-    flex-basis: 42%
-    padding-right: 119px
+    flex-basis: 40%
+    padding-right: 129px
   &__title
-    margin-bottom: 36px
+    margin-bottom: 40px
     font-size: 41px
-    font-weight: 700
     line-height: 55px
+    +bold
   &__subtitle
     display: inline-block
-    margin-bottom: 70px
+    margin-bottom: 68px
     font-size: 20px
-    font-weight: 600
+    padding-left: 0
+    +bold
   &-list
     padding: 0
     margin: 0
@@ -27,13 +28,15 @@
       display: flex
       align-items: center
       justify-content: center
-      min-width: 40px
-      height: 40px
+      width: 36px
+      height: 36px
       border: 2px solid $main-color
       border-radius: 50%
     &__text
-      margin-left: 30px
-      max-width: 300px
+      margin-left: 28px
+      max-width: 250px
+      font-size: 14px
+      line-height: 24px
 
 @media (max-width: 1200px)
   .hero
