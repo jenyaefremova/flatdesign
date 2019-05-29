@@ -330,6 +330,11 @@ img {
   width: 240px;
 }
 
+.offer__input:focus {
+  outline: none;
+  border-color: orange;
+}
+
 .offer__input:first-child {
   margin-right: 10px;
 }
