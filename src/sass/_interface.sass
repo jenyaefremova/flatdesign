@@ -1,3 +1,5 @@
+*
+  box-sizing: border-box
 body
   +reg
   color: $main-text
@@ -20,5 +22,21 @@ img
   padding: 19px 30px 17px 30px
   font-size: 13px
   +bold
+  &:hover
+    background-color: lighten($main-color, 10%)
+    cursor: pointer
+.section
+  padding: 55px 0
+  &-title
+    font-size: 24px
+    +bold
+  &-subtitle
+    font-size: 16px
+.input
+  padding: 23px 26px
+  border-radius: 10px
+  border: 1px solid $input-color
+  color: #999999
+
  
   

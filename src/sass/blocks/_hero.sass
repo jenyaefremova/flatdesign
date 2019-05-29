@@ -1,11 +1,11 @@
 .hero
-  padding: 50px
-  background-color: $bcg-color
+  padding: 52px 0 48px 0
+  background-color: $secondary
   &-block
     display: flex
   &-text
-    flex-basis: 40%
-    padding-right: 129px
+    flex-basis: 51%
+    padding-right: 50px
   &__title
     margin-bottom: 40px
     font-size: 41px
@@ -21,15 +21,17 @@
     padding: 0
     margin: 0
     &__item
-      margin-bottom: 25px
+      margin-bottom: 23px
       display: flex
       align-items: center
+      &:last-child
+        margin-bottom: 0
     &__image
       display: flex
       align-items: center
       justify-content: center
-      width: 36px
-      height: 36px
+      width: 40px
+      height: 40px
       border: 2px solid $main-color
       border-radius: 50%
     &__text
@@ -44,6 +46,8 @@
       flex-direction: column
     &-text
       padding-right: 0
+    &-image
+      margin-top: 30px
 @media (max-width: 576px)
   .hero
     &__title
