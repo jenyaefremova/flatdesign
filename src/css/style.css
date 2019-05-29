@@ -51,7 +51,7 @@ img {
   border-radius: 10px;
   background-color: #ffd200;
   border: none;
-  padding: 19px 30px 17px 30px;
+  padding: 18px 30px 17px 30px;
   font-size: 13px;
   font-family: 'Museo Sans Bold';
 }
@@ -75,7 +75,8 @@ img {
 }
 
 .input {
-  padding: 23px 26px;
+  padding: 23px 28px;
+  font-size: 15px;
   border-radius: 10px;
   border: 1px solid #dddddd;
   color: #999999;
@@ -167,8 +168,13 @@ img {
   padding-right: 50px;
 }
 
+.hero-image {
+  -webkit-box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
+          box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
+}
+
 .hero__title {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   font-size: 41px;
   line-height: 55px;
   font-family: 'Museo Sans Bold';
@@ -188,7 +194,7 @@ img {
 }
 
 .hero-list__item {
-  margin-bottom: 23px;
+  margin-bottom: 26px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,7 +224,7 @@ img {
 }
 
 .hero-list__text {
-  margin-left: 28px;
+  margin-left: 30px;
   max-width: 250px;
   font-size: 14px;
   line-height: 24px;
@@ -247,6 +253,9 @@ img {
   .hero__subtitle {
     font-size: 16px;
     margin-bottom: 28px;
+  }
+  .hero-image {
+    margin-top: 0;
   }
   .hero-list {
     margin-bottom: 38px;
@@ -284,7 +293,7 @@ img {
 .offer__title {
   max-width: 350px;
   line-height: 35px;
-  margin-bottom: 22px;
+  margin-bottom: 19px;
 }
 
 .offer__subtitle {
@@ -292,6 +301,7 @@ img {
   margin-bottom: 30px;
   font-family: 'Museo Sans Bold';
   max-width: 250px;
+  letter-spacing: -0.3px;
 }
 
 .offer__input {
@@ -306,8 +316,8 @@ img {
 .offer__button {
   width: 100%;
   font-size: 16px;
-  padding: 27px 100px;
-  margin-bottom: 26px;
+  padding: 27px 0;
+  margin-bottom: 25px;
 }
 
 .offer__footer {
@@ -327,10 +337,42 @@ img {
 }
 
 .offer__footer span:last-child {
-  max-width: 210px;
+  max-width: 200px;
 }
 
 .offer__footer b {
   font-family: 'Museo Sans Bold';
+}
+
+@media (max-width: 1200px) {
+  .offer {
+    background-size: cover;
+  }
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer__footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offer__footer span:first-child {
+    margin-bottom: 5px;
+  }
+  .offer__button {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    background: #ffffff;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
