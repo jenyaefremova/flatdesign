@@ -7,7 +7,8 @@
     flex-basis: 51%
     padding-right: 50px
   &-image
-    box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05)
+    img
+      box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05)
   &__title
     margin-bottom: 38px
     font-size: 41px
@@ -28,11 +29,13 @@
       align-items: center
       &:last-child
         margin-bottom: 0
+      &:nth-child(2)
+        margin-bottom: 23px
     &__image
       display: flex
       align-items: center
       justify-content: center
-      width: 40px
+      min-width: 40px
       height: 40px
       border: 2px solid $main-color
       border-radius: 50%
@@ -52,16 +55,24 @@
       margin-top: 30px
 @media (max-width: 576px)
   .hero
+    padding-top: 26px
+    padding-left: 5px
     &__title
       font-size: 24px
-      line-height: 1.4
+      line-height: 1.2
+      margin-bottom: 10px      
     &__subtitle
       font-size: 16px
       margin-bottom: 28px
+      max-width: 200px
     &-image
       margin-top: 0
     &-list
       margin-bottom: 38px
+      &__item
+        margin-bottom: 20px
       &__text
         font-size: 12px
         margin-left: 15px
+        line-height: 1.2
+

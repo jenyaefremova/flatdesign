@@ -11,23 +11,10 @@
   &__contacts
     display: flex
     flex-direction: column
-    text-align: right
-    
-  @media (max-width: 768px)
-    .navbar
-      &__contacts
-        display: none
-      &__logo
-        width: 90px
-      &__button
-        font-size: 10px
-        padding: 15px 26px
-     
-
-      
+    text-align: right  
+  
   &__address
-    font-size: 13px
-   
+    font-size: 13px   
   &__phone
     text-decoration: none
     font-size: 20px
@@ -36,4 +23,18 @@
     color: $main-text
   &__button
     margin-left: 29px
+    font-size: 10px
+    padding: 15px 26px          
     +bold
+
+@media (max-width: 768px)
+    .navbar
+      &__contacts
+        display: none
+      &__logo
+        width: 90px
+@media (max-width: 567px)
+  .navbar
+    padding-bottom: 14px
+    &__button
+      margin-right: 10px

@@ -120,19 +120,6 @@ img {
   text-align: right;
 }
 
-@media (max-width: 768px) {
-  .navbar .navbar__contacts {
-    display: none;
-  }
-  .navbar .navbar__logo {
-    width: 90px;
-  }
-  .navbar .navbar__button {
-    font-size: 10px;
-    padding: 15px 26px;
-  }
-}
-
 .navbar__address {
   font-size: 13px;
 }
@@ -147,7 +134,27 @@ img {
 
 .navbar__button {
   margin-left: 29px;
+  font-size: 10px;
+  padding: 15px 26px;
   font-family: 'Museo Sans Bold';
+}
+
+@media (max-width: 768px) {
+  .navbar__contacts {
+    display: none;
+  }
+  .navbar__logo {
+    width: 90px;
+  }
+}
+
+@media (max-width: 567px) {
+  .navbar {
+    padding-bottom: 14px;
+  }
+  .navbar__button {
+    margin-right: 10px;
+  }
 }
 
 /*Подключение стилей главного экрана*/
@@ -168,7 +175,7 @@ img {
   padding-right: 50px;
 }
 
-.hero-image {
+.hero-image img {
   -webkit-box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
           box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
 }
@@ -207,6 +214,10 @@ img {
   margin-bottom: 0;
 }
 
+.hero-list__item:nth-child(2) {
+  margin-bottom: 23px;
+}
+
 .hero-list__image {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -217,7 +228,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 40px;
+  min-width: 40px;
   height: 40px;
   border: 2px solid #ffd200;
   border-radius: 50%;
@@ -246,13 +257,19 @@ img {
 }
 
 @media (max-width: 576px) {
+  .hero {
+    padding-top: 26px;
+    padding-left: 5px;
+  }
   .hero__title {
     font-size: 24px;
-    line-height: 1.4;
+    line-height: 1.2;
+    margin-bottom: 10px;
   }
   .hero__subtitle {
     font-size: 16px;
     margin-bottom: 28px;
+    max-width: 200px;
   }
   .hero-image {
     margin-top: 0;
@@ -260,9 +277,13 @@ img {
   .hero-list {
     margin-bottom: 38px;
   }
+  .hero-list__item {
+    margin-bottom: 20px;
+  }
   .hero-list__text {
     font-size: 12px;
     margin-left: 15px;
+    line-height: 1.2;
   }
 }
 
@@ -362,17 +383,34 @@ img {
     margin-bottom: 5px;
   }
   .offer__button {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 768px) {
   .offer {
     background: #ffffff;
+    padding-top: 21px;
   }
   .offer-block {
     width: 100%;
-    padding-right: 0;
+    padding-right: 15px;
+  }
+  .offer__title {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 17px;
+  }
+  .offer__subtitle {
+    letter-spacing: -1.3px;
+    margin-bottom: 24px;
+  }
+  .offer__button {
+    margin-bottom: 22px;
+    padding: 19px 53px;
+  }
+  .offer__footer {
+    margin-left: 6px;
   }
 }
 /*# sourceMappingURL=style.css.map */
