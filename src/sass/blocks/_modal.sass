@@ -17,11 +17,22 @@
     max-height: 200px
     width: 90%
     padding: 40px
+    display: flex
+    align-items: center
+    flex-direction: column
     &__button
       position: absolute
       top: 0
       right: 0
-    &__heading
-      text-align: center
+      background-color: #fff      
+      &:focus
+        outline: 0
+        border: 1px solid $main-color
+  &__input
+    font-size: 20px
+    padding-left: 60px
+    &:focus
+      outline: none
+      border-color: orange
 
 

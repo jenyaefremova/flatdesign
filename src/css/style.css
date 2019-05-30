@@ -449,15 +449,37 @@ img {
   max-height: 200px;
   width: 90%;
   padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .modal-dialog__button {
   position: absolute;
   top: 0;
   right: 0;
+  background-color: #fff;
 }
 
-.modal-dialog__heading {
-  text-align: center;
+.modal-dialog__button:focus {
+  outline: 0;
+  border: 1px solid #ffd200;
+}
+
+.modal__input {
+  font-size: 20px;
+  padding-left: 60px;
+}
+
+.modal__input:focus {
+  outline: none;
+  border-color: orange;
 }
 /*# sourceMappingURL=style.css.map */
