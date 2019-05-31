@@ -482,4 +482,21 @@ img {
   outline: none;
   border-color: orange;
 }
+
+#up {
+  bottom: 2%;
+  right: 2%;
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  border-style: none;
+  border-radius: 50%;
+}
+
+#up:focus {
+  outline: 0;
+  border: 1px solid #ffd200;
+}
 /*# sourceMappingURL=style.css.map */
