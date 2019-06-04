@@ -54,6 +54,7 @@ img {
   padding: 16px 24px 17px 24px;
   font-size: 13px;
   font-family: 'Museo Sans Bold';
+  font-weight: bold;
 }
 
 .button:hover {
@@ -64,6 +65,7 @@ img {
 .section-title {
   font-size: 30px;
   font-family: 'Museo Sans Bold';
+  font-weight: bold;
   text-align: center;
 }
 
@@ -79,7 +81,9 @@ img {
   color: #999999;
 }
 
-/*Подключение стилей шапки сайта*/
+@-webkit-keyframes form {}
+
+@keyframes form {}/*Подключение стилей шапки сайта*/
 .navbar {
   padding: 6px 0 4px;
 }
@@ -125,6 +129,7 @@ img {
   text-decoration: none;
   font-size: 20px;
   font-family: 'Museo Sans Bold';
+  font-weight: bold;
   margin-top: 6px;
   color: #333333;
 }
@@ -184,6 +189,7 @@ img {
   font-size: 41px;
   line-height: 55px;
   font-family: 'Museo Sans Bold';
+  font-weight: bold;
 }
 
 .hero__subtitle {
@@ -192,6 +198,7 @@ img {
   font-size: 20px;
   padding-left: 0;
   font-family: 'Museo Sans Bold';
+  font-weight: bold;
 }
 
 .hero-list {
@@ -323,6 +330,7 @@ img {
   display: block;
   margin-bottom: 30px;
   font-family: 'Museo Sans Bold';
+  font-weight: bold;
   max-width: 250px;
   letter-spacing: -0.3px;
 }
@@ -370,6 +378,7 @@ img {
 
 .offer__footer b {
   font-family: 'Museo Sans Bold';
+  font-weight: bold;
 }
 
 @media (max-width: 1200px) {
@@ -555,6 +564,7 @@ img {
   color: #333333;
   font-size: 16px;
   font-family: 'Museo Sans Bold';
+  font-weight: bold;
   position: relative;
   display: inline-block;
 }
