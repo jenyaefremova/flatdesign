@@ -1,13 +1,15 @@
 .price
-  padding: 100px 0
+  padding: 95px 0 80px
   text-align: center
   &__title
-    max-width: 500px
+    max-width: 550px
     margin: auto
-    margin-bottom: 58px
+    margin-bottom: 50px
+    line-height: 45px
   &__subtitle
     display: block
     margin-bottom: 59px
+    font-size: 20px
 .card
   border: 1px solid $card-color
   margin-bottom: 30px
@@ -33,9 +35,10 @@
       opacity: 0
       transition: 0.2s
   &__block
-    padding: 40px
+    padding: 12px 0 50px
   &__text
     font-size: 18px
+    margin-bottom: 30px
   &__link
     text-decoration: none
     color: $main-text
@@ -78,7 +81,14 @@
     &__block
       padding: 10px 0 30px
 
-@media (max-width: 425px) 
+@media (max-width: 475px) 
   .price
-    padding-right: 11px
+    padding-right: 9px   
+    padding-bottom: 0
+    &__title
+      line-height: 1.2
+  .card
+    &__block
+      padding: 7px 0 30px
+
     

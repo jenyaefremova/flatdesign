@@ -1,3 +1,4 @@
+@import '../animations'
 .offer
   background: url(../img/offer-bg.jpg) no-repeat
   background-size: contain
@@ -23,12 +24,15 @@
     line-height: 35px
     margin-bottom: 21px
     text-align: left
+    animation-name: jump
+    animation-duration: 2s
   &__subtitle
     display: block
     margin-bottom: 30px
     +bold
     max-width: 250px
     letter-spacing: -0.3px
+    
   &__input
     margin-bottom: 30px
     width: 240px
@@ -55,6 +59,8 @@
         max-width: 200px
     b
       +bold
+      
+
 @media (max-width: 1200px)
   .offer
     background-size: cover    
