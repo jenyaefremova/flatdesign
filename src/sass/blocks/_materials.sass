@@ -1,15 +1,27 @@
 .materials
   padding: 84px 0 90px
-  background-color: $main-color
-  &__title
-    font-size: 32px
-    line-height: 50px
-    margin: auto
-    text-align: center
+  &-block
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
 
-@media (max-width: 475px) 
+    
+    &__item
+      background-color: #f7f7f7
+    
+    
+    &__image
+      min-height: 260px
+      
+     
+    &__text
+      padding: 27px 0 43px 26px
+      margin: 0
+      max-width: 260px 
+   
+@media (max-width: 768px) 
   .materials
-    padding: 70px 25px
-    &__title
-      font-size: 18px
-      line-height: 1.2
+    &-block
+      flex-direction: column
+      &__item
+        margin-bottom: 30px

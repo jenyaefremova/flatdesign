@@ -89,8 +89,8 @@
           <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного
             дизайн-проекта!</span>
           <form action="#" class="form offer__form" id="offer-form">
-            <input type="text" class="input offer__input" placeholder="Ваше имя">
-            <input type="tel" class="input offer__input phone" placeholder="Ваш телефон">
+            <input type="text" name="name" class="input offer__input" placeholder="Ваше имя">
+            <input type="tel" name="phone" class="input offer__input phone" placeholder="Ваш телефон">
             <button class="button offer__button">Получить бесплатный дизайн-проект</button>
           </form>
           <div class="offer__footer">
@@ -259,13 +259,41 @@
     </section>
     <!-- /.section steps -->
 
-    <section class="materials">
+    <!-- <section class="materials">
       <div class="container">
         <h2 class="materials__title">Ремонт обойдется Вам дешевле, так как <br> мы используем качественные материалы по
           оптовым ценам</h2>
       </div>
+    </section> --> 
+
+    <section class="materials">
+      <div class="container">
+        <div class="materials-block">
+          <div class="materials-block__item">
+            <p class="materials-block__text">Поможем закупить все материалы 
+                по оптовым ценам у проверенных поставщиков</p>
+            <div class="materials-block__image">
+              <img src="img/materials/materials-1.png" alt="">
+            </div>
+          </div>
+          <div class="materials-block__item">
+            <p class="materials-block__text">Мы дадим Вам <b>максимальные скидки</b> 
+                у наших партнеров для закупки материалов оптом</p>
+            <div class="materials-block__image">
+              <img src="img/materials/materials-2.png" alt="">
+            </div>
+          </div>
+          <div class="materials-block__item">
+            <p class="materials-block__text">Все, что не сможете найти в городе - поможем заказать у <b>проверенных
+                поставщиков</b></p>
+            <div class="materials-block__image">
+              <img src="img/materials/materials-3.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
-    <!-- /.materials -->
 
     <section class="section documents">
       <div class="container">
@@ -346,9 +374,48 @@
       <!-- /.container -->
     </section>
     <!-- /.section brif -->
-
-
   </main>
+
+  <footer class="footer">
+    <div class="map" id="map">
+      <script type="text/javascript" charset="utf-8" async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af2972d02a67a62e99adc18dea2cc3ebada8722e9d69b19b2586ea7fc6565c437&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false">
+      </script>
+    </div>
+    <div class="container">
+      <div class="contacts-block">
+        <div class="contacts">
+          <h3 class="contacts__title">Приезжайте к нам в гости! Проконсультируем Вас по всем вопросам ремонта</h3>
+          <ul class="contacts-list">
+            <li class="contacts-list__item">
+              <span class="contacts-list__icon">
+                <img src="img/footer/map-placeholder.png" alt="map">
+              </span>
+              <span class="contacts-list__text">г. Москва <br>
+                 <b>ул. Ленина, д. 10, корпус 2, оф. 308</b></span>
+            </li>
+            <li class="contacts-list__item">
+              <span class="contacts-list__icon">
+                <img src="img/footer/clock-with-white-face.png" alt="clock">
+              </span>
+              <span class="contacts-list__text">Режим работы: <br>
+                 <b>с 9:00 до 18:00</b></span>
+            </li>
+            <li class="contacts-list__item">
+              <span class="contacts-list__icon">
+                <img src="img/footer/phone-call-button.png" alt="phone">
+              </span>
+              <span class="contacts-list__text">Телефон: <br>
+               <b><a href="tel:74954225131" class="contacts-list__phone">+ 7 (495) 42-251-31</a></b></span>
+            </li>
+          </ul>
+        </div>
+        <!--  /.contacts -->
+      </div>
+      <!--  /.contacts-block -->
+    </div>
+     <!-- /.container -->
+  </footer>
 
   <div class="modal" id="modal">
     <div class="modal-dialog">
@@ -422,7 +489,7 @@
           phone: "Заполните поле"
         }
       });
-      
+
 
       /*Маска для телефона*/
       $(".phone").mask("+7 (999) 999-99-99");

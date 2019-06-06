@@ -1,0 +1,51 @@
+.footer
+  position: relative
+.map
+  position: absolute
+  left: 0
+  top: 0
+  width: 50%
+.contacts
+  flex-basis: 50%
+  padding-top: 100px
+  padding-left: 215px
+  &-list
+    list-style: none
+    padding: 0
+    &__icon
+      min-width: 20px
+      min-height: 20px
+      margin-right: 22px
+    &__item
+      display: flex
+      justify-content: flex-start
+      margin-bottom: 40px
+      max-width: 190px
+    &__phone
+      text-decoration: none
+      color: $main-text    
+  &__title
+    font-size: 22px
+    line-height: 33px
+    margin-bottom: 100px
+    +bold
+  &-block
+    display: flex
+    justify-content: flex-end
+@media (max-width: 1200px)
+  .contacts
+    padding-left: 60px
+@media (max-width: 768px)
+  .footer
+    display: flex
+    flex-direction: column-reverse
+ 
+  .contacts
+    padding-left: 40px
+    &-block
+      justify-content: flex-start
+  .map
+    width: 100%
+    position: absolute
+    bottom: 0
+    height: 50%
