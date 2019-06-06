@@ -62,6 +62,10 @@ img {
   cursor: pointer;
 }
 
+.section {
+  padding: 100px 0;
+}
+
 .section-title {
   font-size: 30px;
   font-family: 'Museo Sans Bold';
@@ -292,26 +296,10 @@ img {
 }
 
 /*Подключение стилей блока предложения*/
-@-webkit-keyframes jump {
-  from {
-    margin-top: -200px;
-  }
-  to {
-    margin-top: 0;
-  }
-}
-@keyframes jump {
-  from {
-    margin-top: -200px;
-  }
-  to {
-    margin-top: 0;
-  }
-}
-
+/* @import '../animations' */
 .offer {
   background: url(../img/offer-bg.jpg) no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: right;
   position: relative;
   padding: 55px 0 87px;
@@ -339,10 +327,6 @@ img {
   line-height: 35px;
   margin-bottom: 21px;
   text-align: left;
-  -webkit-animation-name: jump;
-          animation-name: jump;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
 }
 
 .offer__subtitle {
@@ -357,11 +341,6 @@ img {
 .offer__input {
   margin-bottom: 30px;
   width: 240px;
-}
-
-.offer__input:focus {
-  outline: none;
-  border-color: orange;
 }
 
 .offer__input:first-child {
@@ -526,13 +505,13 @@ img {
 
 .price__subtitle {
   display: block;
-  margin-bottom: 59px;
+  margin-bottom: 57px;
   font-size: 20px;
 }
 
 .card {
   border: 1px solid #e8e8e8;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .card:hover {
@@ -573,7 +552,7 @@ img {
 }
 
 .card__block {
-  padding: 12px 0 50px;
+  padding: 13px 0 45px;
 }
 
 .card__text {
@@ -710,18 +689,18 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .steps {
-  padding-top: 25px;
-  padding-bottom: 97px;
+  padding-top: 42px;
+  padding-bottom: 85px;
 }
 
 .steps__title {
   max-width: 670px;
   margin: auto;
-  margin-bottom: 57px;
+  margin-bottom: 52px;
   line-height: 45px;
 }
 
@@ -729,7 +708,7 @@ img {
   font-size: 20px;
   text-align: center;
   display: block;
-  margin-bottom: 65px;
+  margin-bottom: 67px;
 }
 
 @media (max-width: 1200px) {
@@ -786,6 +765,275 @@ img {
   .steps__subtitle {
     font-size: 14px;
     margin-bottom: 30px;
+  }
+}
+
+/*Подключение стилей блока материалы*/
+.materials {
+  padding: 84px 0 90px;
+  background-color: #ffd200;
+}
+
+.materials__title {
+  font-size: 32px;
+  line-height: 50px;
+  margin: auto;
+  text-align: center;
+}
+
+@media (max-width: 475px) {
+  .materials {
+    padding: 70px 25px;
+  }
+  .materials__title {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+
+/*Подключение стилей блока документы*/
+.documents {
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+.documents__title {
+  max-width: 650px;
+  margin: auto;
+  margin-bottom: 100px;
+  line-height: 45px;
+}
+
+.documents-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.documents-list__item {
+  text-align: center;
+}
+
+.documents-list__image {
+  border: 20px solid #f5f5f5;
+}
+
+.documents-list__text {
+  max-width: 276px;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+@media (max-width: 475px) {
+  .documents__title {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .documents-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .documents-list__text {
+    font-size: 14px;
+  }
+}
+
+/*Подключение стилей блока бриф*/
+.brif {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
+  background-size: 50%, contain;
+  background-repeat: repeat-y, no-repeat;
+  background-position: left center, center right;
+}
+
+.brif-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.brif__interview {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-right: 70px;
+}
+
+.brif__form {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-left: 208px;
+  text-align: center;
+}
+
+.brif__input {
+  width: 100%;
+  max-width: 370px;
+  margin-bottom: 15px;
+}
+
+.brif__button {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  height: 70px;
+  width: 100%;
+  max-width: 370px;
+  font-size: 16px;
+}
+
+.interview-list {
+  list-style: none;
+  padding: 0;
+  font-family: 'Museo Sans Bold';
+  font-weight: bold;
+}
+
+.interview-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 26px;
+}
+
+.interview-list__counter {
+  width: 35px;
+  height: 35px;
+  border: 2px solid #333333;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.interview-list__text {
+  max-width: 380px;
+}
+
+.interview__title {
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 50px;
+  font-family: 'Museo Sans Bold';
+  font-weight: bold;
+}
+
+.interview__subtitle {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 94px;
+}
+
+.form__title {
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 50px;
+  font-family: 'Museo Sans Bold';
+  font-weight: bold;
+}
+
+.form__subtitle {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+  .brif__form {
+    padding-left: 30px;
+  }
+  .interview {
+    padding-right: 30px;
+  }
+  .interview__title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .interview__subtitle {
+    margin-bottom: 30px;
+  }
+  .interview-list__text {
+    font-size: 14px;
+    max-width: 300px;
+  }
+  .interview-list__counter {
+    margin-right: 20px;
+  }
+  .form__title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .form__subtitle {
+    margin-bottom: 30px;
+  }
+  .form__description {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .brif {
+    background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
+    background-size: 100% 50%, cover;
+    background-repeat: repeat-x, no-repeat;
+    background-position: top center, center bottom;
+  }
+  .brif-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .brif__form {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 475px) {
+  .brif {
+    padding-top: 26px;
+  }
+  .brif-block {
+    padding-left: 7px;
+  }
+  .brif__form {
+    padding-left: 0;
+  }
+  .interview {
+    padding-left: 0;
+  }
+  .interview-list__counter {
+    min-width: 35px;
+    margin-right: 10px;
+  }
+  .interview__title {
+    line-height: 1.2;
+  }
+  .interview__subtitle {
+    font-size: 14px;
+    margin-bottom: 40px;
+    max-width: 180px;
   }
 }
 
