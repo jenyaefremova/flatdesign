@@ -1,6 +1,6 @@
 .documents
-  padding-top: 100px
-  padding-bottom: 60px
+  padding-top: 105px
+  padding-bottom: 200px
   &__title    
     max-width: 650px
     margin: auto
@@ -9,7 +9,7 @@
     
   &-list
     display: flex
-    justify-content: space-between
+    justify-content: space-around
     flex-wrap: wrap
     
     &__item
@@ -21,6 +21,7 @@
       border: 20px solid $secondary
       width: 270px
       height: 360px
+      margin-bottom: 34px
     &__text
       max-width: 276px
       font-size: 18px
@@ -38,4 +39,10 @@
       align-items: center
       &__text
         font-size: 14px
+  
+@media (max-width: 425px) 
+  .documents
+    &__title
+      max-width: 240px
+      margin-bottom: 50px
   

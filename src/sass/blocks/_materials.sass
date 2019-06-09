@@ -1,5 +1,5 @@
 .materials
-  padding: 84px 0 90px
+  padding: 84px 0 30px
   &-block
     display: flex
     justify-content: space-between
@@ -29,5 +29,13 @@
       flex-direction: column
       align-items: center
     &__item
-      height: 304px
-      width: auto
+      height: 300px
+     
+@media (max-width: 425px) 
+  .materials
+    &-block
+      &__text
+        font-size: 12px
+      &__item
+        justify-content: flex-start
+        height: auto
