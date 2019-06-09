@@ -2,26 +2,32 @@
   padding: 84px 0 90px
   &-block
     display: flex
-    justify-content: space-around
-    flex-wrap: wrap
-
-    
+    justify-content: space-between
+    flex-wrap: wrap    
     &__item
-      background-color: #f7f7f7
-    
-    
-    &__image
-      min-height: 260px
-      
-     
+      background-color: #f7f7f7 
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      height: 410px          
+      max-width: 370px
+      width: 100% 
     &__text
       padding: 27px 0 43px 26px
       margin: 0
-      max-width: 260px 
-   
+      width: 260px   
+    
+@media (max-width: 1200px) 
+  .materials
+    &-block
+      justify-content: space-around
+      &__item
+        margin-top: 30px  
 @media (max-width: 768px) 
   .materials
     &-block
       flex-direction: column
-      &__item
-        margin-bottom: 30px
+      align-items: center
+    &__item
+      height: 304px
+      width: auto
