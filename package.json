@@ -1,0 +1,23 @@
+{
+  "name": "flatdesign",
+  "version": "1.0.0",
+  "description": "Верстка адаптивного landing-page, используя sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenyaefremova/flatdesign.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jenyaefremova/flatdesign/issues"
+  },
+  "homepage": "https://github.com/jenyaefremova/flatdesign#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
