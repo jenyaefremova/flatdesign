@@ -440,14 +440,14 @@
   <script src="js/jquery.maskedinput.min.js"></script>
 
   <script>
-  var mapShow = 1000; // В каком положении полосы прокрутки начинать показ карты
+  var mapShow = 4500; // В каком положении полосы прокрутки начинать показ карты
   var map = $('#map');
 
   $(document).ready(function() {
     $(window).scroll(function () { // При прокрутке попадаем в эту функцию
       /* В зависимости от положения полосы прокрукти и значения top_show, скрываем или открываем кнопку "Наверх" */
-      if ($(this).scrollTop() > top_show) map.fadeIn();
-      else up.fadeOut();
+      if ($(this).scrollTop() > mapShow) map.fadeIn();
+      else map.fadeOut();
     });
   });
   </script>
