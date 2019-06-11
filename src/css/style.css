@@ -1465,6 +1465,10 @@ img {
   line-height: 23px;
 }
 
+.visually-hidden {
+  visibility: hidden;
+}
+
 @media (max-width: 1200px) {
   .materials-block {
     -ms-flex-pack: distribute;
@@ -1513,7 +1517,7 @@ img {
 }
 
 .documents__title {
-  max-width: 650px;
+  max-width: 675px;
   margin: auto;
   margin-bottom: 100px;
   line-height: 45px;
