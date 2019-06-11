@@ -375,11 +375,11 @@
   </main>
 
   <footer class="footer">
-    <!-- <div class="map" id="map">
+    <div class="map" id="map">
       <script type="text/javascript" charset="utf-8" async
         src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af2972d02a67a62e99adc18dea2cc3ebada8722e9d69b19b2586ea7fc6565c437&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false">
       </script>
-    </div> -->
+    </div> 
     <div class="container footer-container">
       
         <div class="contacts">
@@ -440,9 +440,21 @@
   <script src="js/jquery.maskedinput.min.js"></script>
 
   <script>
+  var mapShow = 1000; // В каком положении полосы прокрутки начинать показ карты
+  var map = $('#map');
+
+  $(document).ready(function() {
+    $(window).scroll(function () { // При прокрутке попадаем в эту функцию
+      /* В зависимости от положения полосы прокрукти и значения top_show, скрываем или открываем кнопку "Наверх" */
+      if ($(this).scrollTop() > top_show) map.fadeIn();
+      else up.fadeOut();
+    });
+  });
+  </script>
+
+  <script>
     /*Подключение wow.js*/
     new WOW().init();
-
 
     $(document).ready(function () {
       /*Подключение валидации форм*/
