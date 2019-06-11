@@ -430,6 +430,12 @@ img {
   color: #999999;
 }
 
+.input:focus {
+  outline: none;
+  border-color: orange;
+  border-radius: 10px;
+}
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -1303,7 +1309,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 }
 
 .steps {
@@ -1314,7 +1320,7 @@ img {
 .steps__title {
   max-width: 670px;
   margin: auto;
-  margin-bottom: 52px;
+  margin-bottom: 47px;
   line-height: 45px;
 }
 
@@ -1371,6 +1377,7 @@ img {
   .steps {
     padding-right: 12px;
     padding-top: 20px;
+    padding-bottom: 35px;
   }
   .steps__title {
     font-size: 18px;
@@ -1383,9 +1390,40 @@ img {
   }
 }
 
+/*Подключение стилей блока дешевые цены*/
+.cheap-prices {
+  background-color: #ffd200;
+  padding-top: 85px;
+  padding-bottom: 90px;
+}
+
+.cheap-prices__title {
+  text-align: center;
+  margin: auto;
+  font-size: 32px;
+  line-height: 50px;
+}
+
+@media (max-width: 768px) {
+  .cheap-prices__title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .cheap-prices {
+    padding: 69px 0 79px;
+  }
+  .cheap-prices__title {
+    font-size: 18px;
+    max-width: 260px;
+    line-height: 1.2;
+  }
+}
+
 /*Подключение стилей блока материалы*/
 .materials {
-  padding: 84px 0 30px;
+  padding: 100px 0 30px;
 }
 
 .materials-image {
@@ -1421,9 +1459,10 @@ img {
 }
 
 .materials-block__text {
-  padding: 27px 0 43px 26px;
+  padding: 27px 0 0 26px;
   margin: 0;
-  width: 260px;
+  width: 318px;
+  line-height: 23px;
 }
 
 @media (max-width: 1200px) {
@@ -1452,14 +1491,18 @@ img {
 }
 
 @media (max-width: 425px) {
+  .materials {
+    padding-top: 30px;
+  }
   .materials-block__text {
     font-size: 12px;
+    padding: 13px 0 0 14px;
+    width: 220px;
+    line-height: 17px;
   }
   .materials-block__item {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    height: auto;
+    height: 300px;
+    width: 272px;
   }
 }
 
@@ -1533,9 +1576,24 @@ img {
 }
 
 @media (max-width: 425px) {
+  .documents {
+    padding-top: 50px;
+    padding-bottom: 62px;
+  }
   .documents__title {
     max-width: 240px;
     margin-bottom: 50px;
+  }
+  .documents-list__item {
+    margin-bottom: 33px;
+  }
+  .documents-list__text {
+    max-width: 230px;
+    line-height: 19px;
+    margin: auto;
+  }
+  .documents-list__image {
+    margin-bottom: 28px;
   }
 }
 
@@ -1703,7 +1761,7 @@ img {
   }
 }
 
-@media (max-width: 475px) {
+@media (max-width: 425px) {
   .brif {
     padding-top: 26px;
   }
@@ -1712,6 +1770,7 @@ img {
   }
   .brif__form {
     padding-left: 0;
+    margin-top: 70px;
   }
   .interview {
     padding-left: 0;
@@ -1878,11 +1937,6 @@ img {
 .modal__input {
   padding: 20px 50px;
   text-align: center;
-}
-
-.modal__input:focus {
-  outline: none;
-  border-color: orange;
 }
 
 #up {

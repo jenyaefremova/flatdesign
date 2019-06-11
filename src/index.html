@@ -257,12 +257,12 @@
     </section>
     <!-- /.section steps -->
 
-    <!-- <section class="materials">
+    <section class="cheap-prices section">
       <div class="container">
-        <h2 class="materials__title">Ремонт обойдется Вам дешевле, так как <br> мы используем качественные материалы по
+        <h2 class="cheap-prices__title">Ремонт обойдется Вам дешевле, так как <br> мы используем качественные материалы по
           оптовым ценам</h2>
       </div>
-    </section> --> 
+    </section> 
 
     <section class="materials">
       <div class="container">
@@ -376,9 +376,7 @@
 
   <footer class="footer">
     <div class="map" id="map">
-      <script type="text/javascript" charset="utf-8" async
-        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af2972d02a67a62e99adc18dea2cc3ebada8722e9d69b19b2586ea7fc6565c437&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false">
-      </script>
+     
     </div> 
     <div class="container footer-container">
       
@@ -427,7 +425,7 @@
   </div>
   <!-- /.modal -->
 
-  <button id="up">&#129105;</button>
+  <button id="up">&#8593;</button>
 
   <!-- <script src="js/main.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -442,12 +440,19 @@
   <script>
   var mapShow = 4500; // В каком положении полосы прокрутки начинать показ карты
   var map = $('#map');
+  var mapAdd = false;
 
   $(document).ready(function() {
     $(window).scroll(function () { // При прокрутке попадаем в эту функцию
       /* В зависимости от положения полосы прокрукти и значения top_show, скрываем или открываем кнопку "Наверх" */
-      if ($(this).scrollTop() > mapShow) map.fadeIn();
-      else map.fadeOut();
+      if ($(this).scrollTop() > mapShow) {
+        if(mapAdd) return;
+        mapAdd = true;
+        var script = document.createElement('script');
+        script.src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af2972d02a67a62e99adc18dea2cc3ebada8722e9d69b19b2586ea7fc6565c437&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false";
+        map.append(script);
+      };
+
     });
   });
   </script>
