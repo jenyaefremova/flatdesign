@@ -381,7 +381,7 @@ img {
 
 @media (max-width: 1200px) {
   .container {
-    width: 760px;
+    width: 750px;
   }
 }
 
@@ -839,10 +839,6 @@ img {
   margin-bottom: 0;
 }
 
-.hero-list__item:nth-child(2) {
-  margin-bottom: 23px;
-}
-
 .hero-list__image {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -867,24 +863,33 @@ img {
 }
 
 @media (max-width: 1200px) {
+  .hero-text {
+    padding-right: 0;
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
+  .hero__title {
+    font-size: 26px;
+    line-height: 34px;
+  }
+  .hero__subtitle {
+    margin-bottom: 30px;
+  }
+  .hero-list__item {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 26px;
+    padding-left: 5px;
+  }
   .hero-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .hero-text {
-    padding-right: 0;
-  }
-  .hero-image {
-    margin-top: 30px;
-  }
-}
-
-@media (max-width: 576px) {
-  .hero {
-    padding-top: 26px;
-    padding-left: 5px;
   }
   .hero__title {
     font-size: 24px;
@@ -1314,7 +1319,7 @@ img {
 
 .steps {
   padding-top: 42px;
-  padding-bottom: 85px;
+  padding-bottom: 90px;
 }
 
 .steps__title {
@@ -1393,8 +1398,8 @@ img {
 /*Подключение стилей блока дешевые цены*/
 .cheap-prices {
   background-color: #ffd200;
-  padding-top: 85px;
-  padding-bottom: 90px;
+  padding-top: 90px;
+  padding-bottom: 110px;
 }
 
 .cheap-prices__title {
@@ -1423,7 +1428,7 @@ img {
 
 /*Подключение стилей блока материалы*/
 .materials {
-  padding: 100px 0 30px;
+  padding: 20px 0 30px;
 }
 
 .materials-image {
@@ -1711,7 +1716,7 @@ img {
 .form__subtitle {
   display: block;
   font-size: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 1200px) {
@@ -1856,15 +1861,15 @@ img {
 }
 
 @media (max-width: 1200px) {
-  .footer {
-    min-height: 1098px;
-  }
   .contacts {
     padding-left: 30px;
   }
 }
 
 @media (max-width: 768px) {
+  .footer {
+    min-height: 1098px;
+  }
   .footer-container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;

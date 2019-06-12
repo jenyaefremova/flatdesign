@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  var button = $('#button');
+  var button = $('.modal-button');
   var modal = $('#modal');
   var close = $('#close');
 
@@ -12,4 +12,5 @@ $(document).ready(function() {
   });
 
 });
+
 

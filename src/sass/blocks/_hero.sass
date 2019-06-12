@@ -29,8 +29,7 @@
       align-items: center
       &:last-child
         margin-bottom: 0
-      &:nth-child(2)
-        margin-bottom: 23px
+      
     &__image
       display: flex
       align-items: center
@@ -47,16 +46,24 @@
 
 @media (max-width: 1200px)
   .hero
-    &-block
-      flex-direction: column
+    
     &-text
       padding-right: 0
-    &-image
-      margin-top: 30px
-@media (max-width: 576px)
+      flex-basis: 70%
+    &__title
+      font-size: 26px
+      line-height: 34px
+    &__subtitle
+      margin-bottom: 30px
+    &-list
+      &__item
+        margin-bottom: 10px
+@media (max-width: 768px)
   .hero
     padding-top: 26px
     padding-left: 5px
+    &-block
+      flex-direction: column
     &__title
       font-size: 24px
       line-height: 1.2
