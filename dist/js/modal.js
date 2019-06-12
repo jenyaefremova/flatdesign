@@ -9,6 +9,7 @@ $(document).ready(function() {
   });
   close.on('click', function() {
     modal.removeClass('modal-active');
+    $('#modal-form').trigger( 'reset' );
   });
 
 });
