@@ -1092,6 +1092,7 @@ img {
 @media (max-width: 768px) {
   .portfolio {
     padding: 40px 0;
+    background: #f5f5f5;
   }
   .portfolio__title {
     font-size: 18px;
@@ -1428,7 +1429,7 @@ img {
 
 /*Подключение стилей блока материалы*/
 .materials {
-  padding: 30px 0 30px;
+  padding: 100px 0 30px;
 }
 
 .materials-image {
@@ -1758,6 +1759,7 @@ img {
     background-size: 100% 50%, cover;
     background-repeat: repeat-x, no-repeat;
     background-position: top center, center bottom;
+    padding: 0;
   }
   .brif-block {
     -webkit-box-orient: vertical;
@@ -1954,11 +1956,15 @@ img {
   top: 0;
   right: 0;
   background-color: #fff;
+  border: none;
 }
 
 .modal-dialog__button:focus {
   outline: 0;
-  border: 1px solid #ffd200;
+}
+
+.modal-dialog__button:hover {
+  cursor: pointer;
 }
 
 .modal__input {
