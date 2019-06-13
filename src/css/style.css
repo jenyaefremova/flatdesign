@@ -432,7 +432,7 @@ img {
 
 .input:focus {
   outline: none;
-  border-color: orange;
+  /* border-color: orange */
   border-radius: 10px;
 }
 
@@ -966,7 +966,7 @@ img {
 }
 
 .offer__input:first-child {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .offer__button {
@@ -999,6 +999,22 @@ img {
 .offer__footer b {
   font-family: 'Museo Sans Bold';
   font-weight: bold;
+}
+
+.box-input {
+  position: relative;
+  display: inline-block;
+}
+
+input.error {
+  border: 1px solid #ff0000;
+}
+
+label.error {
+  position: absolute;
+  color: #ff0000;
+  top: 70px;
+  left: 12%;
 }
 
 @media (max-width: 1200px) {

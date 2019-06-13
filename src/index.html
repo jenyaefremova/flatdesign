@@ -108,13 +108,18 @@
           <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного
             дизайн-проекта!</span>
           <form action="#" class="form offer__form" id="offer-form">
-            <input type="text" name="name" class="input offer__input" placeholder="Ваше имя">
-            <input type="tel" name="phone" class="input offer__input phone" placeholder="Ваш телефон">
+            <div class="box-input">
+              <input type="text" id="name" name="name" class="input offer__input" placeholder="Ваше имя">
+            </div>
+            <div class="box-input">
+              <input type="tel" name="phone" class="input offer__input phone" placeholder="Ваш телефон">
+            </div>
             <button class="button offer__button">Получить бесплатный дизайн-проект</button>
           </form>
           <div class="offer__footer">
             <span>Наш менеджер перезвонит Вам в течение 60 секунд</span>
-            <span>или перезвоните нам сами <b><a href="tel:74954225131" class="contacts-list__phone">+ 7 (495) 42-251-31</a></b></span>
+            <span>или перезвоните нам сами <b><a href="tel:74954225131" class="contacts-list__phone">+ 7 (495)
+                  42-251-31</a></b></span>
           </div>
         </div>
         <!-- /.offer-block -->
@@ -528,6 +533,19 @@
             email: "Введите корректный email"
           },
           phone: "Заполните поле"
+        },
+        errorElement: "div",
+        errorClass: "errorMessages",
+        validClass: "success",
+        highlight: function (element, errorClass, validClass) {
+          $(element).addClass(errorClass).removeClass(validClass);
+          $(element.form).find("label[for=" + element.id + "]")
+            .addClass(errorClass);
+        },
+        unhighlight: function (element, errorClass, validClass) {
+          $(element).removeClass(errorClass).addClass(validClass);
+          $(element.form).find("label[for=" + element.id + "]")
+            .removeClass(errorClass);
         }
       });
 
